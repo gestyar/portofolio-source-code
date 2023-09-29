@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './app/fondation/footer/footer.component';
@@ -12,6 +11,8 @@ import { ContactComponent } from './app/content/contact/contact.component';
 import { HomeComponent } from './app/home/home.component';
 import { MainComponent } from './app/main/main.component';
 import { JournalComponent } from './app/content/journal/journal.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,10 @@ import { JournalComponent } from './app/content/journal/journal.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

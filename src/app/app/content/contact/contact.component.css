@@ -1,0 +1,23 @@
+.notification {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: white;
+    justify-content: center
+  }
+  
+  .success {
+    background-color: #4CAF50; /* Warna latar belakang hijau */
+  }
+
+  .errorr {
+    background-color: red;
+  }
+  
+  .notification i {
+    margin-right: 10px;
+  }
